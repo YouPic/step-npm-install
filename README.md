@@ -12,6 +12,8 @@ optionally the cache will be cleared in between.
   cache before trying again.
 - `use-cache` (optional, default: `true`) Use the npm cache.
 - `options` (optional) Allow for passing arbitrary arguments to npm.
+- `pre-command` (optional) Command that runs before npm install.
+  E.g. `env NODE_ENV=development` will run `env NODE_ENV=development npm install`.
 
 ## Example
 
@@ -26,6 +28,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.2.0
+
+- Add pre-command
 
 ## 1.1.4
 

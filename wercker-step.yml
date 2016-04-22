@@ -1,6 +1,6 @@
 name: npm-install
-version: 1.1.4
-description: npm-install step
+version: 1.2.0
+description: npm-install step with ability to run pre-command
 properties:
   clear-cache-on-failed:
     type: bool
@@ -11,5 +11,8 @@ properties:
     default: true
     required: false
   options:
+    type: string
+    required: false
+  pre-command:
     type: string
     required: false
